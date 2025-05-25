@@ -143,7 +143,7 @@ class DivideActivity : AppCompatActivity() {
     }
 
     fun pauseTimer() {
-        timer?.cancel()
+        timer!!.cancel()
     }
 
     fun resetTimer() {
@@ -151,20 +151,20 @@ class DivideActivity : AppCompatActivity() {
         updateText()
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        pauseTimer() // Clean up timer to prevent memory leaks
-    }
-
-    override fun onPause() {
-        super.onPause()
-        pauseTimer() // Pause timer when activity is not visible
-    }
-
-    override fun onResume() {
-        super.onResume()
-        if (userLife > 0) {
-            startTimer() // Resume timer when activity becomes visible again
-        }
-    }
+//    override fun onDestroy() {
+//        super.onDestroy()
+//        pauseTimer() // Clean up timer to prevent memory leaks
+//    }
+//
+//    override fun onPause() {
+//        super.onPause()
+//        pauseTimer() // Pause timer when activity is not visible
+//    }
+//
+//    override fun onResume() {
+//        super.onResume()
+//        if (userLife > 0) {
+//            startTimer() // Resume timer when activity becomes visible again
+//        }
+//    }
 }
