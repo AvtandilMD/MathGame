@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/first"
+        tools:context=".MainActivity" android:gravity="center_horizontal">
+    <Button
+            android:text="გამოკლება"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonSub"
+            android:gravity="center_horizontal"
+            android:backgroundTint="?android:attr/windowSplashScreenBackground"
+            android:textColor="?android:attr/windowBackground"
+            android:textSize="24sp" android:textStyle="bold" android:background="@android:drawable/ic_media_rew"
+            android:layout_marginTop="150dp"/>
+    <Button
+            android:text="მიმატება"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonAdd"
+            android:gravity="center_horizontal"
+            android:backgroundTint="?android:attr/windowSplashScreenBackground"
+            android:textColor="?android:attr/windowBackground"
+            android:textSize="24sp" android:textStyle="bold" android:background="@android:drawable/ic_media_ff"
+            android:layout_marginTop="50dp"/>
+    <Button
+            android:text="გაყოფა"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonDiv"
+            android:backgroundTint="?android:attr/windowSplashScreenIconBackgroundColor"
+            android:background="@android:drawable/ic_media_rew"
+            android:textSize="24sp" android:textStyle="bold" android:layout_marginTop="50dp"/>
+    <Button
+            android:text="გამრავლება"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/buttonMulti"
+            android:gravity="center_horizontal"
+            android:backgroundTint="?android:attr/windowSplashScreenBackground"
+            android:textColor="?android:attr/windowBackground"
+            android:textSize="24sp" android:textStyle="bold" android:background="@android:drawable/ic_media_ff"
+            android:layout_marginTop="50dp"/>
+</LinearLayout>
